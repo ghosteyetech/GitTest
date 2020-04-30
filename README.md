@@ -1,12 +1,5 @@
 # GitTest
 
-> copy mysql folder to
-```
-	/opt/jboss/wildfly/modules/system/layers/base/com/
-```
-
-> replace standalone.xml in /opt/jboss/wildfly/standalone/configuration/
-
 > Build docker image
 ```
   $ docker build --no-cache --tag=sameerat8/cloud-portal-services:1.0 .

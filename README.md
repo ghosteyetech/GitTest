@@ -1,8 +1,23 @@
 # GitTest
 
-> copy mysql folder to 
+> copy mysql folder to
 ```
-	C:\Users\Sameera Buz-Temp\wildfly-18.0.1.Final\modules\system\layers\base\com
+	/opt/jboss/wildfly/modules/system/layers/base/com/
 ```
 
-> replace standalone.xml in C:\Users\Sameera Buz-Temp\wildfly-18.0.1.Final\standalone\configuration
+> replace standalone.xml in /opt/jboss/wildfly/standalone/configuration/
+
+> Build docker image
+```
+  $ docker build --no-cache --tag=sameerat8/cloud-portal-services:1.0 .
+```
+
+>Start Docker with a name for in case of need to log into docker
+```
+  $ docker run --name cloud-portal-service -it sameerat8/cloud-portal-services:1.0
+```
+
+> log in to docker using above name (First run docker using above CMD)
+```
+  $ docker exec -it cloud-portal-service /bin/bash
+```
